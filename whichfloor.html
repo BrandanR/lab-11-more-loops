@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Which Floor</title>
+  </head>
+  <body>
+    <script>
+      var userstring = prompt("On what floor of the buidling is your office?");
+      var maximum_stories = parseInt(userstring, 12);
+
+      while (maximum_stories >= 13) {
+        console.log(maximum_stories + " Is not an available floor in this building, try entering a valid number from 1-12 ");
+        userstring = prompt("Gimmie a Floor from 1-12. ");
+        maximum_stories = parseInt(userstring, 12);
+      }
+      console.log(maximum_stories + " ,Congrats, you've made it to the correct floor.");
+    </script>
+  </body>
+</html>
